@@ -178,6 +178,7 @@ namespace iText.PdfCleanup {
             this.btEncountered = false;
             this.isInText = false;
             this.textPositioning = new TextPositioning();
+            this.RegisterContentOperator("cm", new CmOperator());
         }
 
         public override void ProcessPageContent(PdfPage page) {
