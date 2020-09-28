@@ -49,4 +49,3 @@ namespace iText.PdfCleanup
         public void Invoke(PdfCanvasProcessor processor, PdfLiteral @operator, IList<PdfObject> operands) => processor.GetGraphicsState().UpdateCtm(new iText.Kernel.Geom.Matrix());
     }
 }
-s
