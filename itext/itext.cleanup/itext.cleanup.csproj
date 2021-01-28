@@ -39,11 +39,41 @@
     <AssemblyOriginatorKeyFile>itext.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Portable.BouncyCastle.1.8.9\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
       <HintPath>$(SolutionDir)\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
       <HintPath>$(SolutionDir)\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.barcodes, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\itext7.7.1.14\lib\net40\itext.barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.forms, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\itext7.7.1.14\lib\net40\itext.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.io, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\itext7.7.1.14\lib\net40\itext.io.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.kernel, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\itext7.7.1.14\lib\net40\itext.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.layout, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\itext7.7.1.14\lib\net40\itext.layout.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfa, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\itext7.7.1.14\lib\net40\itext.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.sign, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\itext7.7.1.14\lib\net40\itext.sign.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.styledxmlparser, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\itext7.7.1.14\lib\net40\itext.styledxmlparser.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.svg, Version=7.1.14.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\itext7.7.1.14\lib\net40\itext.svg.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,26 +93,14 @@
       <Project>{CEE5E7E1-1BF0-4BE1-9941-903262CE2F83}</Project>
       <Name>itext.io</Name>
     </ProjectReference>
-    <Reference Include="itext.io, Version=7.1.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca" Condition="!Exists('..\..\..\itextcore\itext\itext.io\itext.io.csproj')">
-      <HintPath>$(SolutionDir)\packages\itext7.7.1.13-SNAPSHOT\lib\net40\itext.io.dll</HintPath>
-    </Reference>
     <ProjectReference Include="..\..\..\itextcore\itext\itext.kernel\itext.kernel.csproj" Condition="Exists('..\..\..\itextcore\itext\itext.kernel\itext.kernel.csproj')">
       <Project>{4E7819E8-7555-4E2E-9A01-D8718A2CFDDA}</Project>
       <Name>itext.kernel</Name>
     </ProjectReference>
-    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942" Condition="!Exists('..\..\..\itextcore\itext\itext.kernel\itext.kernel.csproj')">
-      <HintPath>$(SolutionDir)\packages\Portable.BouncyCastle.1.8.5\lib\net40\BouncyCastle.Crypto.dll</HintPath>
-    </Reference>
-    <Reference Include="itext.kernel, Version=7.1.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca" Condition="!Exists('..\..\..\itextcore\itext\itext.kernel\itext.kernel.csproj')">
-      <HintPath>$(SolutionDir)\packages\itext7.7.1.13-SNAPSHOT\lib\net40\itext.kernel.dll</HintPath>
-    </Reference>
     <ProjectReference Include="..\..\..\itextcore\itext\itext.layout\itext.layout.csproj" Condition="Exists('..\..\..\itextcore\itext\itext.layout\itext.layout.csproj')">
       <Project>{42173642-DB52-44D3-9883-3E34C65C53BC}</Project>
       <Name>itext.layout</Name>
     </ProjectReference>
-    <Reference Include="itext.layout, Version=7.1.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca" Condition="!Exists('..\..\..\itextcore\itext\itext.layout\itext.layout.csproj')">
-      <HintPath>$(SolutionDir)\packages\itext7.7.1.13-SNAPSHOT\lib\net40\itext.layout.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
